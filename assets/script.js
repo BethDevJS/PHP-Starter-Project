@@ -8,7 +8,7 @@ async function edit(type) {
         case 'account_number':
             initialValue = document.getElementById('account_number').innerHTML;
             val = await Swal.fire({
-                title: 'What your bank account number?',
+                title: 'What is your bank account number?',
                 input: 'text',
                 inputLabel: 'This can usually be found on your bank\'s website!',
                 inputValue: initialValue,
@@ -26,7 +26,7 @@ async function edit(type) {
         case 'institution_number':
             initialValue = document.getElementById('institution_number').innerHTML;
             val = await Swal.fire({
-                title: 'What your banks financial institution number?',
+                title: 'What is your banks financial institution number?',
                 input: 'text',
                 inputLabel: 'This can usually be found on your bank\'s website!',
                 inputValue: initialValue,
@@ -44,7 +44,7 @@ async function edit(type) {
         case 'transit_number':
             initialValue = document.getElementById('transit_number').innerHTML;
             val = await Swal.fire({
-                title: 'What your banks transit number?',
+                title: 'What is your banks transit number?',
                 input: 'text',
                 inputLabel: 'This can usually be found on your bank\'s website!',
                 inputValue: initialValue,
