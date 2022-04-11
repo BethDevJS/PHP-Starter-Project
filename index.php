@@ -19,8 +19,7 @@ if(!$authorised) die(); // This part just makes sure that the page isn't loaded 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- If you are seeing this, I forgot to remove this part, the php is to stop browser caching -->
-    <link rel="stylesheet" type="text/css" href="assets/style.css?random=<?php echo uniqid(); ?>""/>
+    <link rel="stylesheet" type="text/css" href="assets/style.css"/>
     <link rel="stylesheet" type="text/css" href="assets/sweetalert2.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Generated Cheque</title>
@@ -221,10 +220,9 @@ if(!$authorised) die(); // This part just makes sure that the page isn't loaded 
     </section>
 
     <!-- Placing scripts at the bottom to help efficiency -->
-    <!-- If you are seeing this, I forgot to remove this part, the php is to stop browser caching -->
-    <script src="numbers_to_words/index.js?random=<?php echo uniqid(); ?>"></script>
-    <script src="assets/script.js?random=<?php echo uniqid(); ?>"></script>
-    <script src="assets/sweetalert2.all.min.js">Swal.fire('Any fool can use a computer')</script>
+    <script src="numbers_to_words/index.js"></script>
+    <script src="assets/script.js"></script>
+    <script src="assets/sweetalert2.all.min.js"></script>
     <script>
         //Introduction script
         Swal.fire('User Generated Cheque Project\n\nYou are able to edit the fields of the cheque by clicking on the text, some fields however are auto generated based on other inputs such as the long cheque amount!')
